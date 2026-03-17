@@ -1,0 +1,35 @@
+# telemt.toml
+
+show_link = ["user1"]
+
+[general]
+prefer_ipv6 = false
+fast_mode = true
+use_middle_proxy = false
+
+[general.modes]
+classic = false
+secure = false
+tls = true
+
+[server]
+port = 443
+listen_addr_ipv4 = "0.0.0.0"
+listen_addr_ipv6 = "::"
+
+[censorship]
+tls_domain = "russian_site.ru"   #Изменить домен
+mask = true 
+mask_port = 443
+fake_cert_len = 2048
+
+[access.users]
+user1 = "eab13218480bff0181ef8c3ef4610461"
+user2 = "e03bf4a483e26b34f5047316262f7733"
+
+[[upstreams]]
+type = "direct"
+enabled = true
+weight = 10
+
+
