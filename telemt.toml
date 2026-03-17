@@ -24,8 +24,7 @@ mask_port = 443
 fake_cert_len = 2048
 
 [access.users]
-user1 = "eab13218480bff0181ef8c3ef4610461"
-user2 = "e03bf4a483e26b34f5047316262f7733"
+user1 = "eab13218480bff0181ef8c3ef4610хххх"
 
 [[upstreams]]
 type = "direct"
